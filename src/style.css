@@ -248,6 +248,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 470px;
+  height: 320px;
 }
 
 .sk {
@@ -327,11 +329,6 @@ body {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-}
-
-.author-img {
-  -webkit-box-shadow: 2px 2px 25px #140a0a;
-          box-shadow: 2px 2px 25px #140a0a;
 }
 
 .author-img:hover {

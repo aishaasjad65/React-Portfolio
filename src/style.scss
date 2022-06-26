@@ -209,6 +209,8 @@ body{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 470px;
+    height: 320px;
 }
 
 .sk{
@@ -245,7 +247,7 @@ body{
 }
 
 .author-img {
-    box-shadow: 2px 2px 25px rgb(20, 10, 10);    
+    // box-shadow: 2px 2px 25px rgb(20, 10, 10);    
 }
 
 .author-img:hover{

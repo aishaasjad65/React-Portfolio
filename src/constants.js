@@ -10,7 +10,7 @@ const scrambled_phrases = [
     'I am a Tech. Community Nerd',
     'I am a #MSFT Tech. Associate',
     'I am a #MSFT Certified Trainer',
-    'I am aWriter',
+    'I am a Writer',
     'I am a Illustrator',
     'I am a UI/UX Engg.'
 ]

@@ -9,7 +9,6 @@ export default function Banner() {
                 <div className="author  text-center ">
                     <div className="author-img  text-center"></div>
                     <div>
-
                         <h1>
                             <div className="title_loader">
                                 <span>
@@ -18,7 +17,7 @@ export default function Banner() {
                             </div>
                         </h1>
 
-                        <h5 className="text-black font-size-15 posFixed text-center">
+                        <h5 className="text-black font-size-15 text-center">
                             <TextScrambler
                                 phrases={constants.scrambled_phrases}
                                 speed={50}
