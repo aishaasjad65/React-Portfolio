@@ -1,6 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react';
 
 export default function WriteUps() {
+    const [writeUps, setWriteUps] = useState([]);
+    useEffect(() => {
+        // Function to fetch all articles from Dev.to API
+        async function fetchArticles() {
+            const response = await fetch(
+                'https://dev.to/api/articles?username=mursalfk'
+            );
+            const data = await response.json();
+            data?.map((article) => {
+                const needed_data = {
+                    title: article.title,
+                    description: article.description,
+                    url: article.url,
+                    image: article.social_image,
+                    date: article.published_at,
+                    tags: article.tag_list,
+                }
+                setWriteUps(prevState => [...prevState, needed_data])
+            })
+        }
+        fetchArticles();
+    }, [])
     return (
         <section className="news py-5 px-4 bg-light" id="publications">
             <div className="py-3">
@@ -8,27 +31,26 @@ export default function WriteUps() {
                 <h1 className="text-uppercase font-staat font-size-34">Publications</h1>
             </div>
             <div className="row">
-                <div className="col-sm-4 my-3">
-                    <div className="card border-0">
-                        <a href="https://medium.com/analytics-vidhya/generate-certificates-using-python-a7685985ed77"
-                            rel="noreferrer" target="_blank">
-                            <img src="./assets/news/04.jpg" alt="news1" className="card-img-top" />
-                        </a>
-                        <div className="card-body">
-                            <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
-                            <b className="text-uppercase text-dark">Generate Certificates using Python</b>
-                            <p className="cart-text text-black-50 text-secondary">
-                                Being a Microsoft Student Partner (MSP) means we have to deal with our developer
-                                community every day. And every day, we are trying to teach and learn ...
-                            </p>
-
+                {writeUps.map((writeUp, index) => {
+                    return (
+                        <div className="col-md-4" key={index}>
+                            <div className="card mb-4">
+                                <img src={writeUp.image} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
+                                    <h5 className="card-title">{writeUp.title}</h5>
+                                    <p className="card-text">{writeUp.description}</p>
+                                    <a target="_blank" rel="noopener" href={writeUp.url} className="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-sm-4 my-3">
+                    )
+                })}
+
+                {/* <div className="col-sm-4 my-3">
                     <div className="card border-0">
                         <a href="https://ieeexplore.ieee.org/document/8673426" rel="noreferrer" target="_blank">
-                            <img src="./assets/news/01.jpg" alt="news1" className="card-img-top" />
+                            <img src="src\assets\news\01.jpg" alt="news1" className="card-img-top" />
                         </a>
                         <div className="card-body">
                             <p className="font-ram font-size-16 text-black-50">Research Paper</p>
@@ -41,38 +63,7 @@ export default function WriteUps() {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-sm-4 my-3">
-                    <div className="card border-0">
-                        <a href="https://medium.com/@mursalfurqan/send-automated-emails-with-python-a3890c456e94"
-                            rel="noreferrer" target="_blank">
-                            <img src="./assets/news/02.jpg" alt="news1" className="card-img-top" />
-                        </a>
-                        <div className="card-body">
-                            <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
-                            <b className="text-uppercase text-dark">Send Automated Emails with Python</b>
-                            <p className="cart-text text-black-50 text-secondary">
-                                21st Century is the age of digitization, and the world is changing is so fast,
-                                that if you learn to stay updated with everyone, you would be far left ...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-4 my-3">
-                    <div className="card border-0">
-                        <a href="https://www.theticblog.com/top-10-disadvantages-of-the-internet/"
-                            rel="noreferrer" target="_blank">
-                            <img src="./assets/news/03.jpg" alt="news1" className="card-img-top" /></a>
-                        <div className="card-body">
-                            <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
-                            <b className="text-uppercase text-dark">Top 10 Disadvantages of Internet</b>
-                            <p className="cart-text text-black-50 text-secondary">
-                                In this article, we are going to discuss one of the biggest issue/crises of the
-                                decade: Disadvantages of the Intern...
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )
