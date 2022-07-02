@@ -31,13 +31,25 @@ export default function WriteUps() {
                 <h1 className="text-uppercase font-staat font-size-34">Publications</h1>
             </div>
             <div className="row">
-                {writeUps.map((writeUp, index) => {
+                {writeUps?.map((writeUp, index) => {
                     return (
                         <div className="col-md-4" key={index}>
                             <div className="card mb-4">
                                 <img src={writeUp.image} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
+                                    {/* Show Tags */}
+                                    <div className="d-flex flex-wrap">
+                                        {writeUp.tags.map((tag, index) => {
+                                            return (
+                                                // 
+                                                <span className="badge font-size-8 badge-pill badge-secondary mr-1 mb-1" key={index}>
+                                                    #{tag}
+                                                </span>
+                                            )
+                                        }
+                                        )}
+                                    </div>
                                     <h5 className="card-title">{writeUp.title}</h5>
                                     <p className="card-text">{writeUp.description}</p>
                                     <a target="_blank" rel="noopener" href={writeUp.url} className="btn btn-primary">Read More</a>
