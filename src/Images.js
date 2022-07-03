@@ -16,6 +16,7 @@ const Images = {
     MIEExpert: require('./assets/work/14.png'),
     MCT: require('./assets/work/15.png'),
     CyberSecurity: require('./assets/work/16.png'),
+    LogoWhite: require('./assets/work/logo_white.png'),
 }
 
 export default Images;
