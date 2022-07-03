@@ -286,14 +286,14 @@ body{
     padding: 1.5rem 1rem;
 }
 
-@media screen and (min-width: 768px){
-    .toggle-button{
-        display: none;
-    }
-    #header{
-        z-index:0;
-    }
-}
+// @media screen and (min-width: 768px){
+//     .toggle-button{
+//         display: none;
+//     }
+//     #header{
+//         z-index:0;
+//     }
+// }
 .container{
     width: 1200px;
     display: grid;

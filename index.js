@@ -1,15 +1,15 @@
 $(document).ready(function(e){
-    $win = $(window);
-    $navbar = $('#header');
-    $toggle = $('.toggle-button');
-    var width = $navbar.width();
-    toggle_onclick($win, $navbar, width);
+    var win = window;
+    var navbar = document.getElementById('header');
+    var toggle = document.getElementsByClassName('toggle-button');
+    var width = navbar.offsetWidth;
+    toggle_onclick(win, navbar, width);
     // resize event
-    $win.resize(function(){
-        toggle_onclick($win, $navbar, width);
-    });
-    $toggle.click(function(e){
-        $navbar.toggleClass("toggle-left");
+    win.resize(function(){
+        toggle_onclick(win, navbar, width);
+    })
+    toggle.click(function(e){
+        navbar.classList.toggle("toggle-left");
     })
 });
 function toggle_onclick($win, $navbar, width){
