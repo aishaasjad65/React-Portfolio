@@ -509,6 +509,60 @@ body {
   }
 }
 
+.carousal1 {
+  width: calc(100vw - 370px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.carousal1 li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.carousal1 .card {
+  max-height: 400px;
+  min-height: 400px;
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.carousal1 .card:hover {
+  background-color: #eaeaea27;
+}
+
+.carousal1 .tags-section .tags-badge {
+  margin-top: 5px;
+  background-color: #f1efef;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  color: #111;
+}
+
+.carousal1 .read_more_btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 5px;
+  background-color: #111;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin-right: 5px;
+  bottom: 30px;
+  color: #f1efef;
+  position: fixed;
+}
+
+.carousal1 .read_more_btn:hover {
+  -webkit-transition: cubic-bezier(1, 0, 0, 1);
+  transition: cubic-bezier(1, 0, 0, 1);
+  background-color: #f1efef;
+  color: #111;
+  border: 1px solid #111;
+}
+
 .scrollTop {
   position: fixed;
   bottom: -100px;

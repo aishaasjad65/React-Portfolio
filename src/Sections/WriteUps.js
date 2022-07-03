@@ -1,5 +1,28 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+
 
 export default function WriteUps() {
     const [writeUps, setWriteUps] = useState([]);
@@ -28,82 +51,43 @@ export default function WriteUps() {
         <section className="news py-5 px-4 bg-light" id="publications">
             <div className="py-3">
                 <h5 className="text-uppercase font-os font-size-16 text-muted">Blogs &</h5>
-                <h1 className="text-uppercase font-staat font-size-34">Publications</h1>
+                <h1 className="text-uppercase font-staat font-size-34">Articles</h1>
             </div>
             <div className="row">
-                {/* CArousal */}
-                <div className="col-12">
-                    <div className="carousel slide" data-ride="carousel" id="carouselExampleControls">
-                        <div className="carousel-inner">
-                            {writeUps.map((writeUp, index) => {
-                                return (
-                                    <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <h5 className="card-title">{writeUp.title}</h5>
-                                                <p className="card-text">{writeUp.description}</p>
-                                                <a href={writeUp.url} className="btn btn-primary">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            }
-                            )}
-                        </div>
-                        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                {/* {writeUps?.map((writeUp, index) => {
-                    return (
-                        <div className="col-md-4" key={index}>
-                            <div className="card mb-4">
-                                <img src={writeUp.image} className="card-img-top" alt="..." />
+                <div className="carousal1"
+                    swipeable={true}
+                    draggable={true}
+                    showDots={false}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={false}
+                    autoPlay={false}
+                    autoPlaySpeed={1000}
+                    keyBoardControl={true}
+                    customTransition="all .5"
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-margin-10-px carousel-item-padding-40-px"
+                >
+                    <Carousel responsive={responsive}>
+                        {writeUps.map((writeUp, index) => (
+                            <div className="card mb-3" key={index}>
                                 <div className="card-body">
-                                    <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
-                                    <div className="d-flex flex-wrap">
-                                        {writeUp.tags.map((tag, index) => {
-                                            return (
-                                                // 
-                                                <span className="badge font-size-8 badge-pill badge-secondary mr-1 mb-1" key={index}>
-                                                    #{tag}
-                                                </span>
-                                            )
-                                        }
-                                        )}
+                                    <img src={writeUp.image} alt="WriteUp" className="card-img-top" />
+                                    <div className="card-text tags-section">
+                                        {writeUp.tags.map((tag, index) => (
+                                            <span className="tags-badge badge badge-pill badge-primary mr-2" key={index}>#{tag}</span>
+                                        ))}
                                     </div>
                                     <h5 className="card-title">{writeUp.title}</h5>
                                     <p className="card-text">{writeUp.description}</p>
-                                    <a target="_blank" rel="noopener" href={writeUp.url} className="btn btn-primary">Read More</a>
+                                    <a href={writeUp.url} target="_balnk" rel="noopener" className="read_more_btn btn btn-primary">Read More</a>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })} */}
-
-                {/* <div className="col-sm-4 my-3">
-                    <div className="card border-0">
-                        <a href="https://ieeexplore.ieee.org/document/8673426" rel="noreferrer" target="_blank">
-                            <img src="src\assets\news\01.jpg" alt="news1" className="card-img-top" />
-                        </a>
-                        <div className="card-body">
-                            <p className="font-ram font-size-16 text-black-50">Research Paper</p>
-                            <b className="text-uppercase text-dark">Industrial Robotic Claw for Cottage
-                                Industries</b>
-                            <p className="cart-text text-black-50 text-secondary">
-                                International Conference of Mathematics, Engineeering and Technology (iCoMET)
-                                2019 <br />
-                                <i>Sukkur IBA University, Sukkur, Pakistan</i>
-                            </p>
-                        </div>
-                    </div>
-                </div> */}
+                        ))}
+                    </Carousel>
+                </div>
             </div>
         </section>
     )
