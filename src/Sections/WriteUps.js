@@ -31,14 +31,42 @@ export default function WriteUps() {
                 <h1 className="text-uppercase font-staat font-size-34">Publications</h1>
             </div>
             <div className="row">
-                {writeUps?.map((writeUp, index) => {
+                {/* CArousal */}
+                <div className="col-12">
+                    <div className="carousel slide" data-ride="carousel" id="carouselExampleControls">
+                        <div className="carousel-inner">
+                            {writeUps.map((writeUp, index) => {
+                                return (
+                                    <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
+                                        <div className="card">
+                                            <div className="card-body">
+                                                <h5 className="card-title">{writeUp.title}</h5>
+                                                <p className="card-text">{writeUp.description}</p>
+                                                <a href={writeUp.url} className="btn btn-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            )}
+                        </div>
+                        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                {/* {writeUps?.map((writeUp, index) => {
                     return (
                         <div className="col-md-4" key={index}>
                             <div className="card mb-4">
                                 <img src={writeUp.image} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <p className="font-ram font-size-16 text-black-50">Technical Blog</p>
-                                    {/* Show Tags */}
                                     <div className="d-flex flex-wrap">
                                         {writeUp.tags.map((tag, index) => {
                                             return (
@@ -57,7 +85,7 @@ export default function WriteUps() {
                             </div>
                         </div>
                     )
-                })}
+                })} */}
 
                 {/* <div className="col-sm-4 my-3">
                     <div className="card border-0">
