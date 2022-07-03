@@ -29,7 +29,7 @@ export default function Main() {
   return (
     <>
       <div id="loader" className="center"></div>
-      <div className="scrollTop" onclick="scrollToTop();"></div>
+      {/* <div className="scrollTop" onClick={scrollToTop()}></div> */}
 
       <Sidebar />
 

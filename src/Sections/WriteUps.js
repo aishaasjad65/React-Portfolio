@@ -55,20 +55,13 @@ export default function WriteUps() {
             </div>
             <div className="row">
                 <div className="carousal1"
-                    swipeable={true}
-                    draggable={true}
-                    showDots={false}
-                    ssr={true} // means to render carousel on server-side.
-                    infinite={false}
-                    autoPlay={false}
-                    autoPlaySpeed={1000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-margin-10-px carousel-item-padding-40-px"
+                    swipeable="true"
+                    draggable="true"
+                    ssr="true" // means to render carousel on server-side.
+                    keyboardcontrol="true"
+                    customdransition="all .5"
+                    transitionduration={500}
+                    containerclass="carousel-container"
                 >
                     <Carousel responsive={responsive}>
                         {writeUps.map((writeUp, index) => (
@@ -77,7 +70,7 @@ export default function WriteUps() {
                                     <img src={writeUp.image} alt="WriteUp" className="card-img-top" />
                                     <div className="card-text tags-section">
                                         {writeUp.tags.map((tag, index) => (
-                                            <span className="tags-badge badge badge-pill badge-primary mr-2" key={index}>#{tag}</span>
+                                            <span className="tags-badge badge badge-pill badge-primary mr-2" key={'i' + index}>#{tag}</span>
                                         ))}
                                     </div>
                                     <h5 className="card-title">{writeUp.title}</h5>
