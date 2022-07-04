@@ -40,7 +40,7 @@ export default function Main() {
       <div id="loader" className="center"></div>
       {/* <div className="scrollTop" onClick={scrollToTop()}></div> */}
       {/* Show sidebar only when windows size is more than 768 */}
-      {window.innerWidth > 768 ?
+      {/* {window.innerWidth > 768 ?
         <Sidebar />
         :
         <header id="header">
@@ -50,13 +50,13 @@ export default function Main() {
             </button>
           }
         </header>
-      }
+      } */}
 
       {isMobile && <Sidebar setIsMobile={setIsMobile} />}
 
       <main id="site-main">
         <div className="row m-0">
-          <div className="col-md-9 offset-md-3 px-0">
+          <div className=" px-0">
 
             {/* Banner */}
             <Banner />
