@@ -42,7 +42,7 @@ const Achievements = [
     }, {
         title: 'Microsoft Student Partner',
         image: Images.MSP,
-    },{
+    }, {
         title: 'IBM - Tools for Data Science',
         image: Images.IBMDS,
     }, {
@@ -66,9 +66,33 @@ const Achievements = [
     }
 ]
 
+const skillClassNames = [
+    "fab fa-html5 fa-4x sk",
+    "fab fa-js-square fa-4x sk",
+    "fab fa-css3-alt fa-4x sk",
+    "fab fa-react fa-4x sk",
+    "fab fa-node-js fa-4x sk",
+    "fab fa-sass fa-4x sk",
+    "fab fa-less fa-4x sk",
+    "fab fa-npm fa-4x sk",
+    "fab fa-python fa-4x sk",
+    "fab fa-java fa-4x sk",
+    "fab fa-bootstrap fa-4x sk",
+    "fab fa-git fa-4x sk",
+    "devicon-cplusplus-plain fa-4x sk",
+    "devicon-mysql-plain fa-4x sk",
+    "devicon-android-plain fa-4x sk",
+    "devicon-visualstudio-plain fa-4x sk",
+    "devicon-wordpress-plain fa-4x sk",
+    "devicon-photoshop-plain fa-4x sk",
+    "devicon-illustrator-plain fa-4x sk",
+    "devicon-php-plain fa-4x sk",
+]
+
 const constants = {
     Achievements,
     scrambled_phrases: scrambled_phrases,
+    skillClassNames,
 }
 
 export default constants

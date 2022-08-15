@@ -286,6 +286,10 @@ body{
     padding: 1.5rem 1rem;
 }
 
+.about_me_icon{
+    width: 350px;
+}
+
 // @media screen and (min-width: 768px){
 //     .toggle-button{
 //         display: none;
@@ -372,16 +376,38 @@ body{
 }
 
 .carousal1{
-    width: calc(100vw - 370px);
+    width: calc(100vw - 35px);
     height: fit-content;
+    // 5px of margin-right to first child of li
+    li:first-child{
+        margin-left: 10px;
+    }
     li{
         margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 25px;
+        width: fit-content !important;
     }
     .card{
-        max-height: 400px;
-        min-height: 400px;
+        max-height: 300px;
+        min-height: 300px;
+        width: 300px;
         box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+
+        .card-title{
+            // Only one line
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-text{
+            font-size: 0.75rem;
+            // Limit to one line only
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
         &:hover{
             background-color: #eaeaea27;
         }
@@ -446,4 +472,10 @@ body{
     font-weight: 100;
     font-size: 28px;
     color: #fafafa;
+}
+
+// Height is 80% of window height
+.full-height {
+    max-height: 100vh;
+    min-height: 80vh;
 }

@@ -401,6 +401,10 @@ body {
   padding: 1.5rem 1rem;
 }
 
+.about_me_icon {
+  width: 350px;
+}
+
 .container {
   width: 1200px;
   display: -ms-grid;
@@ -501,22 +505,43 @@ body {
 }
 
 .carousal1 {
-  width: calc(100vw - 370px);
+  width: calc(100vw - 35px);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
+.carousal1 li:first-child {
+  margin-left: 10px;
+}
+
 .carousal1 li {
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 25px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .carousal1 .card {
-  max-height: 400px;
-  min-height: 400px;
+  max-height: 300px;
+  min-height: 300px;
+  width: 300px;
   -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.carousal1 .card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousal1 .card .card-text {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .carousal1 .card:hover {
@@ -583,5 +608,10 @@ body {
   font-weight: 100;
   font-size: 28px;
   color: #fafafa;
+}
+
+.full-height {
+  max-height: 100vh;
+  min-height: 80vh;
 }
 /*# sourceMappingURL=style.css.map */
