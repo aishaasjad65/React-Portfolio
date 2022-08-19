@@ -89,10 +89,45 @@ const skillClassNames = [
     "devicon-php-plain fa-4x sk",
 ]
 
+const education = [
+    {
+        className: 'fas fa-university fa-3x sk',
+        title: 'Masters of Science in Artificial Intelligence',
+        institute: 'NED University of Engineering and Technology, Karachi',
+        year: 'Batch of Spring - 2021'
+    }, {
+        className: 'fas fa-brain fa-3x sk',
+        title: 'Artificial Intelligence',
+        institute: 'Presidential Initiative for Artificial Intelligence & Computing',
+        year: 'Batch - 1'
+    }, {
+        className: 'fas fa-university fa-3x sk',
+        title: 'Bachelors of Engineering in Computer Systems Engineering',
+        institute: 'Mehran University of Engineering and Technology, Jamshoro',
+        year: 'Batch of Fall - 2016'
+    }, {
+        className: 'far fa-lightbulb fa-3x sk',
+        title: 'Intermediate in Pre-Engineering',
+        institute: 'Cadet College Petaro, Jamshoro',
+        year: 'Batch of 2011'
+    }, {
+        className: 'fas fa-school fa-3x sk',
+        title: 'Secondary School Certificate',
+        institute: 'Cadet College Petaro, Jamshoro',
+        year: 'Batch of 2011'
+    }, {
+        className: 'fa fa-graduation-cap fa-4x',
+        title: 'Primary School Certificate',
+        institute: "St. Bonaventure's High School and College, Qasimabad, Hyderabad",
+        year: '2008 - 2011'
+    }
+]
+
 const constants = {
     Achievements,
     scrambled_phrases: scrambled_phrases,
     skillClassNames,
+    education
 }
 
 export default constants

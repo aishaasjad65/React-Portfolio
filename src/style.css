@@ -579,6 +579,79 @@ body {
   border: 1px solid #111;
 }
 
+.carousal_education {
+  width: calc(100vw - 35px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.carousal_education li:first-child {
+  margin-left: 10px;
+}
+
+.carousal_education li {
+  margin-left: 5px;
+  margin-right: 25px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.carousal_education .card {
+  max-height: 300px;
+  min-height: 300px;
+  width: 300px;
+}
+
+.carousal_education .card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousal_education .card .card-text {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousal_education .card:hover {
+  background-color: #eaeaea27;
+}
+
+.carousal_education .tags-section .tags-badge {
+  margin-top: 5px;
+  background-color: #f1efef;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  color: #111;
+}
+
+.carousal_education .read_more_btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 5px;
+  background-color: #111;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin-right: 5px;
+  bottom: 30px;
+  color: #f1efef;
+  position: fixed;
+}
+
+.carousal_education .read_more_btn:hover {
+  -webkit-transition: cubic-bezier(1, 0, 0, 1);
+  transition: cubic-bezier(1, 0, 0, 1);
+  background-color: #f1efef;
+  color: #111;
+  border: 1px solid #111;
+}
+
 .scrollTop {
   position: fixed;
   bottom: -100px;
