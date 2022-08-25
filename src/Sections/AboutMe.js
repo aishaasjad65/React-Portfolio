@@ -17,7 +17,7 @@ export default function AboutMe() {
 
                 </div>
                 <div className="col-sm-8">
-                    <h5 className="font-ram font-size-20 py-2 text-uppercase ">I'm Mursal Furqan<div className="text">
+                    <h5 className="font-ram font-size-20 py-2 text-uppercase retro">I'm Mursal Furqan<div className="text">
                     </div>
                     </h5>
                     <p className="font-ram text-black-50 py-2 bio">
