@@ -1,14 +1,19 @@
 import React from 'react'
 import TextScrambler from 'react-scramble-text'
 import constants from '../constants.js'
+// import Images from Images.js
+import Images from '../Images.js'
+// import Images from '../Images.js'
 
 export default function Banner() {
     return (
         <section className="site-banner" id="home">
             <div className="banner-area text-center ">
                 <div className="author  text-center ">
-                    <div className="author-img  text-center"></div>
-                    <div>
+                    <div className="author-img  text-center">
+                        <img src={Images.about_me}></img>
+                    </div>
+                    {/* <div>
                         <h1>
                             <div className="title_loader">
                                 <span>
@@ -26,7 +31,7 @@ export default function Banner() {
                                 scramble={true}
                             />
                         </h5>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

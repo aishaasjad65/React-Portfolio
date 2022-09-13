@@ -1,5 +1,6 @@
 // Export Const Images
 const Images = {
+    about_me: require('./assets/about.jpg'),
     self_png: require('./assets/Self.png'),
     MOSWord: require('./assets/work/07.png'),
     MOSPPT: require('./assets/work/06.png'),
