@@ -1,5 +1,7 @@
 // Export Const Images
 const Images = {
+    bg_video: require('./assets/bg_video1.mp4'),
+    about_me1: require('./assets/about1.png'),
     about_me: require('./assets/about.jpg'),
     self_png: require('./assets/Self.png'),
     MOSWord: require('./assets/work/07.png'),
