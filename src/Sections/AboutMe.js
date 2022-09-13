@@ -35,6 +35,14 @@ export default function AboutMe() {
                     </p>
                     <div className="d-flex flex-row flex-wrap justify-content-between py-1">
                         <div className="d-flex flex-column">
+                            {/* Facebook Icon form fas*/}
+                            {/* <a href="https://www.facebook.com/mursal.furqan" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-facebook-f fa-2x text-primary"></i>
+                            </a> */}
+                            {/* LinkedIn Icon form fab*/}
+                            {/* <a href="https://www.linkedin.com/in/mursal-furqan-a8a8a817/" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin fa-2x text-primary"></i>
+                            </a> */}
                             <p className="font-ram">
                                 <i className="fas fa-phone"></i>
                                 <span className="text-black-50"> &nbsp; +92 343-350-0305</span>
