@@ -32,7 +32,7 @@ export default function Sidebar(props) {
                             <div className="d-flex flex-column ">
                                 <a href="#home"
                                     className="nav-item nav-link text-white-50 font-os font-size-16 active">
-                                    <img src={Images.LogoWhite} height='40پx' width='40px' alt="logo" className="logo-white" />
+                                    <img src={Images.LogoWhite} height='40px' width='40px' alt="logo" className="logo-white" />
                                 </a>
                                 <a href="#about_me"
                                     className="nav-item nav-link text-white-50 font-os font-size-16 active">
