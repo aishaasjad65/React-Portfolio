@@ -43,7 +43,7 @@ export default function Banner() {
                                 <h1>I am Mursal Furqan</h1>
                             </div>
                         }
-                        <img src={Images.about_me1}></img>
+                        <img className={`${window.innerWidth < 768 ? "mobile_img" : "normal_img"}`} src={Images.about_me1}></img>
                         {window.innerWidth < 768 &&
                             <h5 className="scramble_text-mobile font-size-15 text-center">
                                 <TextScrambler

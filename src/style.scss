@@ -315,19 +315,19 @@ body {
                 .hello {
                     margin-top: 0px;
                     margin-bottom: 0px;
-                    font-size: 40px;
+                    font-size: 2rem;
                     font-weight: 600;
                 }
                 .iam {
                     line-height: 25px;
                     color: rgb(187, 187, 187);
-                    font-size: 20px;
+                    font-size: 1.2rem;
                     font-weight: 600;
                     text-indent: 5px;
                 }
                 .name {
                     line-height: 30px;
-                    font-size: 60px;
+                    font-size: 4rem;
                     font-weight: 600;
                     // neon font
                     animation: neon 30s infinite;
@@ -335,7 +335,7 @@ body {
                 }
                 .designation {
                     text-indent: 10px;
-                    line-height: 40px;
+                    line-height: 2rem;
                     font-size: 20px;
                     font-weight: 600;
                 }
@@ -357,7 +357,20 @@ body {
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
 
-                img {
+                .mobile_img {
+                    width: 100%;
+                }
+
+                .normal_img {
+                    // Crop the image from left and right side
+                    margin-left: -100px;
+                    // Crop the image from top and bottom side
+                    margin-top: -100px;
+                    margin-bottom: -100px;
+                    height: 100vh;
+                    width: 100%;
+
+                    object-fit: cover;
                     width: 100%;
                 }
             }
