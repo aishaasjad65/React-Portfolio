@@ -33,7 +33,6 @@
     color: white;
     position: relative;
     width: fit-content;
-    margin: auto;
     span {
         mix-blend-mode: difference;
     }
@@ -271,6 +270,12 @@ body {
 
 .mobile-width {
     width: 380px !important;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .site-banner {
@@ -286,6 +291,13 @@ body {
         overflow: hidden;
     }
     .banner-area {
+        .mobile_author{
+            left: 0% !important;
+            margin-left: 0px !important;
+            height: 100vh !important;
+            top: 0% !important;
+            
+        }
         .author {
             position: absolute;
             top: 10%;
@@ -348,14 +360,17 @@ body {
                 height: 100vh;
                 float: left;
                 width: fit-content;
-                filter: grayscale(100%);
                 animation-name: float;
                 animation-duration: 5s;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
+                
+                .grayscaleFilter {
+                    filter: grayscale(100%);
+                }
 
                 .mobile_img {
-                    width: 100%;
+                    width: 45%;
                 }
 
                 .normal_img {

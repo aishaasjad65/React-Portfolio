@@ -12,7 +12,7 @@ export default function Banner() {
                         <video className="colored_vid_bg" autoPlay muted loop id="myVideo">
                             <source src={Images.bg_video} type="video/mp4" />
                         </video>
-                        <div className="author  text-center ">
+                        <div className="author mobile_author text-center ">
                             <div className="mobile-width author-img  text-center">
                                 <div className="title_loader-mobile">
                                     <span className='font-size-15'>
@@ -39,30 +39,28 @@ export default function Banner() {
                             <source src={Images.bg_video} type="video/mp4" />
                         </video>
                         <div className="author  text-center ">
-                            {window.innerWidth >= 768 &&
-                                <div className='nomobile-text'>
-                                    <p className='hello'>
-                                        &lt; Hello World /&gt;
-                                    </p>
-                                    <p className='iam'>
-                                        I am
-                                    </p>
-                                    <p className='name'>
-                                        Mursal Furqan Kumbhar
-                                    </p>
-                                    <span className='designation'>
-                                        <TextScrambler
-                                            phrases={constants.scrambled_phrases}
-                                            speed={50}
-                                            pauseTime={1000}
-                                            delay={0}
-                                            scramble={true}
-                                        />
-                                    </span>
-                                </div>
-                            }
-                            <div className="author-img  text-center">
-                                <img className={`${window.innerWidth < 768 ? "mobile_img" : "normal_img"}`} src={Images.about_me1}></img>
+                            <div className='nomobile-text'>
+                                <p className='hello'>
+                                    &lt; Hello World /&gt;
+                                </p>
+                                <p className='iam'>
+                                    I am
+                                </p>
+                                <p className='name'>
+                                    Mursal Furqan Kumbhar
+                                </p>
+                                <span className='designation'>
+                                    <TextScrambler
+                                        phrases={constants.scrambled_phrases}
+                                        speed={50}
+                                        pauseTime={1000}
+                                        delay={0}
+                                        scramble={true}
+                                    />
+                                </span>
+                            </div>
+                            <div className="author-img text-center">
+                                <img className="normal_img grayscaleFilter" src={Images.about_me1}></img>
                             </div>
                         </div>
                     </>
