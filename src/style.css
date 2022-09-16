@@ -94,6 +94,16 @@
   margin: auto;
 }
 
+::-moz-selection {
+  background: #004f04;
+  color: #fff;
+}
+
+::selection {
+  background: #004f04;
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
