@@ -33,7 +33,7 @@ export default function Education() {
                 <>
                     <div className="do py-5">
                         <h5 className="text-uppercase font-os font-size-16 text-muted">Where have I</h5>
-                        <h1 className="text-uppercase font-staat font-size-34">Studied</h1>
+                        <h1 className="text-uppercase font-staat font-size-34">Studied ({constants.education.length})</h1>
                     </div>
                     <div className="row">
                         <div className="carousal_education"
