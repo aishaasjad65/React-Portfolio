@@ -64,6 +64,10 @@ export default function Experience() {
                 </>
             ) : (
                 <>
+                    <div className="refer py-3">
+                        <h5 className="text-uppercase font-os font-size-16 text-muted">What is my</h5>
+                        <h1 className="text-uppercase font-staat font-size-34">Experience</h1>
+                    </div>
                     <div className="row mb-5">
                         <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
                             <div className="panel border p-4 ">
