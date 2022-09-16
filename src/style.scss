@@ -278,6 +278,19 @@ body {
     align-items: center;
 }
 
+.experience_box{
+    height: 330px;
+    overflow: hidden;
+    .panel{
+        height: 100%;
+        overflow: hidden;
+        .panel-body{
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
 .site-banner {
     .banner-area,
     #particles-js {

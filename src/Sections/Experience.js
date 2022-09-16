@@ -8,8 +8,8 @@ export default function Experience() {
                 <h1 className="text-uppercase font-staat font-size-34">Experience</h1>
             </div>
             <div className="row mb-5">
-                <div className="col-md-4 col-sm-6 mb-4 text-center">
-                    <div className="panel border p-4">
+                <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
+                    <div className="panel border p-4 ">
                         <span className="icon text-secondary"><i className="fab fa-react fa-3x sk"></i></span>
                         <h4 className="font-ram py-4">Associate Software Engineer</h4>
                         <p className="font-ram font-size-16 text-black-50">
@@ -21,7 +21,7 @@ export default function Experience() {
                         </p>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-6 mb-4 text-center">
+                <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
                     <div className="panel border p-4">
                         <span className="icon text-secondary"><i className="fas fa-cogs fa-3x sk"></i></span>
                         <h4 className="font-ram py-4">CIT Instructor</h4>
@@ -31,7 +31,7 @@ export default function Experience() {
                         </p>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-6 mb-4 text-center">
+                <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
                     <div className="panel border p-4">
                         <span className="icon text-secondary"><i className="fas fa-cog fa-3x sk"></i></span>
                         <h4 className="font-ram py-4">STEAM Trainer for 4IR</h4>
@@ -42,7 +42,7 @@ export default function Experience() {
                         </p>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-6 mb-4 text-center">
+                <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
                     <div className="panel border p-4">
                         <span className="icon text-secondary"><i className="fas fa-network-wired fa-3x sk"></i></span>
                         <h4 className="font-ram py-4">Network Analyst (Intern)</h4>
@@ -53,7 +53,7 @@ export default function Experience() {
                         </p>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-6 mb-4 text-center">
+                <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
                     <div className="panel border p-4">
                         <span className="icon text-secondary"><i className="fab fa-react fa-3x sk"></i></span>
                         <h4 className="font-ram py-4">React Native Developer (Intern)</h4>
