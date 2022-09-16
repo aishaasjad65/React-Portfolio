@@ -94,6 +94,14 @@
   margin: auto;
 }
 
+* {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
 ::-moz-selection {
   background: #004f04;
   color: #fff;
