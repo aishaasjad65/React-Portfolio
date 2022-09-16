@@ -47,7 +47,7 @@ export default function Education() {
                         >
                             <Carousel responsive={responsive}>
                                 {constants.education.map((education, index) => (
-                                    <div className="card mb-4 text-center">
+                                    <div className="card mb-4 text-center education_box">
                                         <div className="panel border p-4">
                                             <span className="icon text-secondary"><i className={education.className}></i></span>
                                             <h4 className="font-ram py-4">{education.title}</h4>
@@ -69,7 +69,7 @@ export default function Education() {
                         <h1 className="text-uppercase font-staat font-size-34">Studied</h1>
                     </div>
                     <div className="row">
-                        <div className="col-md-4 col-sm-6 mb-4 text-center">
+                        <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
                             <div className="panel border p-4">
                                 <span className="icon text-secondary"><i className="fas fa-university fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">Masters of Science in Artificial Intelligence</h4>
@@ -79,7 +79,7 @@ export default function Education() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 mb-4 text-center">
+                        <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
                             <div className="panel border p-4">
                                 <span className="icon text-secondary"><i className="fas fa-brain fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">Artificial Intelligence</h4>
@@ -90,7 +90,7 @@ export default function Education() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 mb-4 text-center">
+                        <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
                             <div className="panel border p-4">
                                 <span className="icon text-secondary"><i className="fas fa-university fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">Computer System Engineering</h4>
@@ -100,7 +100,7 @@ export default function Education() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 mb-4 text-center">
+                        <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
                             <div className="panel border p-4">
                                 <span className="icon text-secondary"><i className="far fa-lightbulb fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">Intermediate</h4>
@@ -110,7 +110,7 @@ export default function Education() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-6 mb-4 text-center">
+                        <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
                             <div className="panel border p-4">
                                 <span className="icon text-secondary"><i className="fas fa-school fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">High School</h4>
