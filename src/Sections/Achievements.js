@@ -45,8 +45,7 @@ export default function Achievements() {
                             <Carousel responsive={responsive}>
                                 {constants.Achievements.map((Achievements, index) => (
                                     <div className="col-sm-2 pb-1">
-                                        <img src={Achievements.image} width="200" height="200" alt={Achievements.title}
-                                            className="img-fluid tilt" />
+                                        <img src={Achievements.image} width="200" height="200" alt={Achievements.title} className="carousal_img_achievements tilt" />
                                         <h4 className="text-uppercase font-os font-size-16 text-muted py-2">{Achievements.title}</h4>
                                     </div>
                                 ))}
@@ -59,7 +58,11 @@ export default function Achievements() {
                             constants.Achievements && constants.Achievements.map((item, index) => {
                                 return (
                                     <>
-
+                                        <div className="col-sm-2 pb-1">
+                                            <img src={item.image} width="100" height="100" alt={item.title}
+                                                className="img-fluid tilt" />
+                                            <h4 className="text-uppercase font-os font-size-16 text-muted py-2">{item.title}</h4>
+                                        </div>
                                     </>
                                 )
                             })

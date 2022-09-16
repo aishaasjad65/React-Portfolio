@@ -912,4 +912,9 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
+.carousal_img_achievements {
+  width: 120px;
+  height: auto;
+}
 /*# sourceMappingURL=style.css.map */
