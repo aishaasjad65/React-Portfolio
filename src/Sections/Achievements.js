@@ -1,5 +1,4 @@
 import React from 'react'
-import Images from '../Images.js'
 import constants from '../constants.js'
 
 export default function Achievements() {
