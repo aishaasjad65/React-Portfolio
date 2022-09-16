@@ -127,45 +127,45 @@ const experience = [
     {
         className: 'fab fa-react fa-3x sk',
         title: 'Software Engineer',
-        institute: 'E4Solutions, Sydney (Remote)',
+        location: 'E4Solutions, Sydney (Remote)',
         details: 'Worked with ReactJS on outAbox Solutions.',
-        year: 'Aug 2022 - Present'
+        duration: 'Aug 2022 - Present'
     }, {
         className: 'fab fa-react fa-3x sk',
         title: 'Associate Software Engineer',
-        institute: 'Diya Interactive, Karachi',
+        location: 'Diya Interactive, Karachi',
         details: 'Worked with ReactJS & Django to develop web applications, such as QriosityNet & Others.',
-        year: 'Feb 2021 - Feb 2022'
+        duration: 'Feb 2021 - Feb 2022'
     }, {
         className: 'fab fa-react fa-3x sk',
         title: 'Backend Python Intern',
-        institute: 'Diya Interactive, Karachi',
+        location: 'Diya Interactive, Karachi',
         details: 'Worked with Django to develop web applications pilot projects.',
-        year: 'Dec 2020 - Feb 2021'
+        duration: 'Dec 2020 - Feb 2021'
     }, {
         className: 'fas fa-cogs fa-3x sk',
         title: 'CIT Instructor',
-        institute: 'Kamyab Jawan Programme, ORIC, MUET',
+        location: 'Kamyab Jawan Programme, ORIC, MUET',
         details: 'Main reponsibilities include training the youth of Pakistan to empower the future.',
-        year: 'Nov 2020 - Dec 2020'
+        duration: 'Nov 2020 - Dec 2020'
     }, {
         className: 'fas fa-cog fa-3x sk',
         title: 'STEAM Trainer for 4IR',
-        institute: "Int'l Islamic Univ. Islamabad Schools, Latifabad, Hyderabad",
+        location: "Int'l Islamic Univ. Islamabad Schools, Latifabad, Hyderabad",
         details: 'Worked with IIUISL team to teach and instruct young students about STEAM w.r.t. 4th Industrial Revolution and its integration in their syllabus.',
-        year: 'Sept 2019 - Nov 2019'
+        duration: 'Sept 2019 - Nov 2019'
     }, {
         className: 'fas fa-network-wired fa-3x sk',
         title: 'Network Analyst (Intern)',
-        institute: 'Pakistan Telecommunication Limited, Hyderabad<',
+        location: 'Pakistan Telecommunication Limited, Hyderabad<',
         details: 'Worked with PTCL’s customer relation and network analyst team to detect and solve customer complaints. Also worked on Nokia Motive to document faulty lines.',
-        year: 'June 2019 - July 2019'
+        duration: 'June 2019 - July 2019'
     }, {
         className: 'fab fa-react fa-3x sk',
         title: 'React Native Developer (Intern)',
-        institute: 'Codex Innovation Club (CIC) Hub, Hyderabad',
+        location: 'Codex Innovation Club (CIC) Hub, Hyderabad',
         details: 'Have an experience of 14 Weeks being an React Native Internee. Helped in different projects including: Smart Attendance System (With QR Code) etc.',
-        year: 'June 2018 - July 2018'
+        duration: 'June 2018 - July 2018'
     }
 ]
 

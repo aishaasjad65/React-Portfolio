@@ -23,12 +23,9 @@ const responsive = {
     }
 };
 
-
 export default function Education() {
     return (
         <section className="services-area px-4 py-5" id="education">
-
-
             {window.innerWidth < 768 ? (
                 <>
                     <div className="do py-5">
