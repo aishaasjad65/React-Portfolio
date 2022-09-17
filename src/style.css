@@ -433,11 +433,6 @@ body {
   overflow: hidden;
 }
 
-.experience_box .panel .panel-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 .site-banner .banner-area,
 .site-banner #particles-js {
   background-color: rgba(0, 0, 0, 0.79);

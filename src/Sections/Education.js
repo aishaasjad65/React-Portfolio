@@ -45,7 +45,7 @@ export default function Education() {
                             <Carousel responsive={responsive}>
                                 {constants.education.map((education, index) => (
                                     <div className="card mb-4 text-center education_box">
-                                        <div className="panel border p-4">
+                                        <div className="panel p-4">
                                             <span className="icon text-secondary"><i className={education.className}></i></span>
                                             <h4 className="font-ram py-4">{education.title}</h4>
                                             <p className="font-ram font-size-16 text-black-50">
@@ -67,7 +67,7 @@ export default function Education() {
                     </div>
                     <div className="row">
                         <div className="col-md-4 col-sm-6 mb-4 text-center education_box">
-                            <div className="panel border p-4">
+                            <div className="panel  p-4">
                                 <span className="icon text-secondary"><i className="fas fa-university fa-3x sk"></i></span>
                                 <h4 className="font-ram py-4">Masters of Science in Artificial Intelligence</h4>
                                 <p className="font-ram font-size-16 text-black-50">
