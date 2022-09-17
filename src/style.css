@@ -30,6 +30,10 @@
           filter: grayscale(0%);
 }
 
+.mobile .carousal_education, .mobile .carousal_education {
+  width: 100vw !important;
+}
+
 .title_loader-mobile {
   font-size: 20px;
   color: white;

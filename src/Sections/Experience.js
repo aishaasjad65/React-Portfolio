@@ -33,7 +33,7 @@ export default function Experience() {
                         <h5 className="text-uppercase font-os font-size-16 text-muted">What is my</h5>
                         <h1 className="text-uppercase font-staat font-size-34">Experience ({constants.experience.length})</h1>
                     </div>
-                    <div className="row">
+                    <div className="row mobile">
                         <div className="carousal_education"
                             swipeable="true"
                             draggable="true"
