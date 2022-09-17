@@ -416,7 +416,11 @@ body {
   overflow: hidden;
 }
 
-.education_box .panel {
+.education_box :hover {
+  background: #f3f3f3;
+}
+
+.panel {
   border: none;
   height: 100%;
   overflow: hidden;
@@ -427,10 +431,8 @@ body {
   overflow: hidden;
 }
 
-.experience_box .panel {
-  border: none;
-  height: 100%;
-  overflow: hidden;
+.experience_box :hover {
+  background: #f3f3f3;
 }
 
 .site-banner .banner-area,

@@ -46,14 +46,16 @@ export default function Experience() {
                             <Carousel responsive={responsive}>
                                 {constants.experience.map((experience, index) => (
                                     <div className="card mb-4 text-center education_box">
-                                        <div className="panel p-4">
+                                        <div className="panel border p-4">
                                             <span className="icon text-secondary"><i className={experience.className}></i></span>
                                             <h4 className="font-ram py-4">{experience.title}</h4>
                                             <p className="font-ram font-size-16 text-black-50">
                                                 {experience.location}
                                                 {experience.details}
                                                 <br />
-                                                {experience.duration}
+                                                <i>
+                                                    {experience.duration}
+                                                </i>
                                             </p>
                                         </div>
                                     </div>
@@ -71,14 +73,16 @@ export default function Experience() {
                     <div className="row mb-5">
                         {constants.experience.map((experience, index) => (
                             <div className="col-md-4 col-sm-6 mb-4 text-center experience_box">
-                                <div className="panel p-4">
+                                <div className="panel border p-4">
                                     <span className="icon text-secondary"><i className={experience.className}></i></span>
                                     <h4 className="font-ram py-4">{experience.title}</h4>
                                     <p className="font-ram font-size-16 text-black-50">
                                         {experience.location}
                                         {experience.details}
                                         <br />
-                                        {experience.duration}
+                                        <i>
+                                            {experience.duration}
+                                        </i>
                                     </p>
                                 </div>
                             </div>

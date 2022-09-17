@@ -291,23 +291,25 @@ body {
     align-items: center;
 }
 
-.education_box{
+.education_box {
     height: 275px;
     overflow: hidden;
-    .panel{
-        border: none;
-        height: 100%;
-        overflow: hidden;
+    :hover{
+        background: #f3f3f3;
     }
 }
 
-.experience_box{
+.panel {
+    border: none;
+    height: 100%;
+    overflow: hidden;
+}
+
+.experience_box {
     height: 330px;
     overflow: hidden;
-    .panel{
-        border: none;
-        height: 100%;
-        overflow: hidden;
+    :hover{
+        background: #f3f3f3;
     }
 }
 
@@ -324,12 +326,11 @@ body {
         overflow: hidden;
     }
     .banner-area {
-        .mobile_author{
+        .mobile_author {
             left: 0% !important;
             margin-left: 0px !important;
             height: 100vh !important;
             top: 0% !important;
-            
         }
         .author {
             position: absolute;
@@ -397,7 +398,7 @@ body {
                 animation-duration: 5s;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
-                
+
                 .grayscaleFilter {
                     filter: grayscale(100%);
                 }
@@ -734,7 +735,7 @@ body {
     text-transform: uppercase;
 }
 
-.carousal_img_achievements{
+.carousal_img_achievements {
     width: 120px;
     height: auto;
 }
