@@ -20,7 +20,8 @@ const scrambled_phrases = [
 const Achievements = [
     {
         title: 'Cybersecurity Essentials',
-        image: Images.CyberSecurity,
+        image: 'https://images.credly.com/size/680x680/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png',
+        link: 'https://www.credly.com/badges/f3d12d62-6b91-43fa-8edd-a5793c9760bf'
     }, {
         title: 'Microsoft Certified Trainer',
         image: Images.MCT,
