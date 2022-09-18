@@ -30,10 +30,6 @@
           filter: grayscale(0%);
 }
 
-.mobile .carousal_education, .mobile .carousal_education {
-  width: 100vw !important;
-}
-
 .title_loader-mobile {
   font-size: 20px;
   color: white;
@@ -418,6 +414,7 @@ body {
 .education_box {
   height: 275px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .education_box :hover {
@@ -433,6 +430,7 @@ body {
 .experience_box {
   height: 330px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .experience_box :hover {
