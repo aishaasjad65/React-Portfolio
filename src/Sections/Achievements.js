@@ -44,9 +44,30 @@ export default function Achievements() {
                         >
                             <Carousel responsive={responsive}>
                                 {constants.Achievements.map((Achievements, index) => (
-                                    <div className="col-sm-2 pb-1">
-                                        <img src={Achievements.image} width="200" height="200" alt={Achievements.title} className="carousal_img_achievements tilt" />
-                                        <h4 className="text-uppercase font-os font-size-16 text-muted py-2">{Achievements.title}</h4>
+                                    <div className="pb-1">
+                                        <img src={Achievements.image} width="100" height="100" alt={Achievements.title}
+                                            className="img-fluid tilt" />
+                                        {Achievements.link ? (
+                                            <>
+                                                <h4 className="text-uppercase font-os font-size-16 text-muted achievement-text">
+                                                    <a href={Achievements.link} target="_blank" rel="noopener noreferrer">
+                                                        {Achievements.title}
+                                                    </a>
+                                                    <i><h6 className="text-uppercase font-os font-size-16 text-muted">By {Achievements.issuer ?? Achievements.issuer}</h6></i>
+                                                </h4>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <h4 className="text-uppercase font-os font-size-16 text-muted py-2 achievement-text">
+                                                    {Achievements.title}
+                                                    <i>
+                                                        <h6 className="text-uppercase font-os font-size-16 text-muted">
+                                                            By {Achievements.issuer ?? Achievements.issuer}
+                                                        </h6>
+                                                    </i>
+                                                </h4>
+                                            </>
+                                        )}
                                     </div>
                                 ))}
                             </Carousel>
@@ -55,13 +76,30 @@ export default function Achievements() {
                 ) : (
                     <>
                         {
-                            constants.Achievements && constants.Achievements.map((item, index) => {
+                            constants.Achievements && constants.Achievements.map((Achievements, index) => {
                                 return (
                                     <>
                                         <div className="col-sm-2 pb-1">
-                                            <img src={item.image} width="100" height="100" alt={item.title}
+                                            <img src={Achievements.image} width="100" height="100" alt={Achievements.title}
                                                 className="img-fluid tilt" />
-                                            <h4 className="text-uppercase font-os font-size-16 text-muted py-2">{item.title}</h4>
+                                            {Achievements.link ? (
+                                                <>
+                                                    <h4 className="text-uppercase font-os font-size-16 text-muted achievement-text">
+                                                        <a href={Achievements.link} target="_blank" rel="noopener noreferrer">
+                                                            {Achievements.title}
+
+                                                        </a>
+                                                        <i><p className="text-uppercase font-os font-size-16 text-muted">By {Achievements.issuer ?? Achievements.issuer}</p></i>
+                                                    </h4>
+
+                                                </>
+
+                                            ) : (
+                                                <>
+                                                    <h4 className="text-uppercase font-os font-size-16 text-muted py-2">{Achievements.title}</h4>
+                                                    <i><p className="text-uppercase font-os font-size-16 text-muted py-2">{Achievements.issuer ?? Achievements.issuer}</p></i>
+                                                </>
+                                            )}
                                         </div>
                                     </>
                                 )

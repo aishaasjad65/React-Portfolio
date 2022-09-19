@@ -20,50 +20,79 @@ const scrambled_phrases = [
 const Achievements = [
     {
         title: 'Cybersecurity Essentials',
-        image: 'https://images.credly.com/size/680x680/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png',
-        link: 'https://www.credly.com/badges/f3d12d62-6b91-43fa-8edd-a5793c9760bf'
+        image: Images.CyberSecurity,
+        link: 'https://www.credly.com/badges/f3d12d62-6b91-43fa-8edd-a5793c9760bf',
+        issuer: 'Cisco'
     }, {
         title: 'Microsoft Certified Trainer',
         image: Images.MCT,
+        link: 'https://www.credly.com/badges/2d6344e7-6eb2-4bc2-86d8-bdd5c88bf351',
+        issuer: 'Microsoft'
     }, {
-        title: 'Microsoft Innovative Educator - Master Trainer 2020-2021',
+        title: 'MIE - Master Trainer 2020-2021',
         image: Images.MIEMT,
+        link: '',
+        issuer: 'Microsoft'
     }, {
-        title: 'Microsoft Innovative Educator Expert 2020-2021',
+        title: 'MIE Expert 2020-2021',
         image: Images.MIEExpert,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Beta - Microsoft Learn Student Ambassador',
         image: Images.MLSABeta,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Data Scientist - DataCamp',
         image: Images.DSDC,
+        link: '',
+        issuer: 'DataCamp'
     }, {
         title: 'MTA - Network Fundamentals',
         image: Images.MTANF,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Student Partner',
         image: Images.MSP,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'IBM - Tools for Data Science',
         image: Images.IBMDS,
+        link: '',
+        issuer: 'IBM'
     }, {
         title: 'MTA - Introduction to Python',
         image: Images.MTAPython,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Innovative Educator - Trainer',
         image: Images.MIETrainer,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Office Specialist - Word Expert',
         image: Images.MOSWordExpert,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Office Specialist - Excel',
         image: Images.MOSExcel,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Office Specialist - PowerPoint',
         image: Images.MOSPPT,
+        link: '',
+        issuer: 'Microsoft'
     }, {
         title: 'Microsoft Office Specialist - Word',
         image: Images.MOSWord,
+        link: '',
+        issuer: 'Microsoft'
     }
 ]
 

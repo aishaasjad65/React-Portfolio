@@ -47,6 +47,28 @@
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#certifications img {
+  height: 100%;
+  width: auto;
+  max-width: none !important;
+  max-height: 125px;
+}
+
+#certifications h6 {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.achievement-text {
+  line-height: 0;
+  margin-top: 10px;
+}
+
 @-webkit-keyframes animate {
   0%,
   100% {
@@ -306,12 +328,12 @@ body {
 }
 
 .tilt:hover {
-  -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-name: jitter;
-          animation-name: jitter;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 @-webkit-keyframes jitter {
